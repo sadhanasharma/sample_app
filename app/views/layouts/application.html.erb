@@ -1,17 +1,39 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-  <title><%= getTitle %></title>
-  <%= stylesheet_link_tag    "blueprint/screen", media: "screen"%>
+	<title><%= getTitle %></title>
+	<%= stylesheet_link_tag    "blueprint/screen", media: "screen"%>
 
-  <%= stylesheet_link_tag    "blueprint/print", media: "print"%>
+	<%= stylesheet_link_tag    "blueprint/print", media: "print"%>
 
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
+	` <%= stylesheet_link_tag    "custom", media: "screen"%>
 </head>
 <body>
+	<div class="container">
+		<header>
+			<%= image_tag("logo.png", :alt => "Sample Application" , :class => "round") %>
+			<nav class="round">
+				<ul>
+					<li>
+						<%= link_to "Home", "#" %>
+					</li>
+					<li>
+						<%= link_to "Help", "#" %>
+					</li>
 
-<%= yield %>
+					<li>
+						<%= link_to "Sign in", "#" %>
+					</li>
 
+				</ul>
+			</nav>
+		</header>
+		<section class="round">
+		<%= yield %>
+		</section>
+	</div>
 </body>
 </html>
