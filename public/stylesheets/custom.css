@@ -6,7 +6,7 @@
 
 body
 {
-	background: #cff;
+	background: #94DEFF;
 }
 
 header
@@ -26,6 +26,11 @@ section
 	font-size: 120%;
 	padding: 20px;
 	background: white;
+}
+
+section h1
+{
+		font-size: 200%;
 }
 
 /* Links */
