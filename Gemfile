@@ -35,7 +35,10 @@ end
 group :development, :test do
    gem "webrat"
   gem 'rspec-rails'
+  gem 'spork'
+
 end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

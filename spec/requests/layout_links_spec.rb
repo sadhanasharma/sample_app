@@ -13,10 +13,37 @@ describe "LayoutLinks" do
 		response.should contain( "Contact")
 	end
 
-		it "should have  a contact page at '/about'" do
+	it "should have  a contact page at '/about'" do
 
 		get '/about'
 		response.should contain( "About")
 	end
 
+	it "should have a sign up page at '/signup" do
+		get '/signup'
+		response.should have_selector('title', :content => "Sign up")
+	end
+
+	it "should have  a help page at '/Help'" do
+
+		get '/help'
+		response.should have_selector('title', :content => "Help")
+	end
+
+	it "should have right links on the layouts" do
+		visit root_path
+		response.should have_selector('title', :content => "Home")
+		click_link "about"
+		response.should have_selector('title', :content => "About" )
+		click_link "contact"
+		response.should have_selector('title', :content => "Contact" )
+
+		click_link "home"
+		response.should have_selector('title', :content => "Home" )
+
+		click_link "Sign up now!"
+		response.should have_selector('title', :content => "Sign up" )
+		response.should have_selector('a[href="/"] > img')
+
+	end
 end
