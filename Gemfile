@@ -33,10 +33,10 @@ group :doc do
 end
 
 group :development, :test do
-   gem "webrat"
-  gem 'rspec-rails'
-  gem 'spork'
-
+	gem "webrat"
+	gem 'rspec-rails'
+	gem 'spork'
+	gem "annotate-models"
 end
 
 
