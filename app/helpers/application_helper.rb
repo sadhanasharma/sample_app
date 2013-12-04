@@ -11,4 +11,8 @@ def getTitle
 
 end
 
+def getLogo
+	 image_tag("logo.png", :alt => "Sample Application" , :class => "round")	
+end
+
 end
