@@ -37,6 +37,7 @@ group :development, :test do
 	gem 'rspec-rails'
 	gem 'spork'
 	gem 'annotate', ">=2.6.0"
+	gem "factory_girl_rails", "1.0"
 end
 
 
