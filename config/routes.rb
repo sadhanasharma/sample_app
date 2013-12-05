@@ -4,7 +4,7 @@ SampleApp::Application.routes.draw do
   match '/about', to:  'pages#about', via: :all
   match '/help', to:  'pages#help', via: :all
   match '/signup', to:  'users#new', via: :all
-
+  resources :users
   
   root "pages#home"
   
