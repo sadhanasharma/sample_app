@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sample_app.iml" afterPath="$PROJECT_DIR$/.idea/sample_app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sample_app.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" time="1386278732980" ignored="false" />
+    <file path="/Dummy.txt" changelist="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" time="1386282931887" ignored="false" />
     <file path="/a.rxml" changelist="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" time="1386253897175" ignored="false" />
     <file path="/user_spec.rb" changelist="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" time="1386254512366" ignored="false" />
     <file path="/user.rb" changelist="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" time="1386254757733" ignored="false" />
@@ -35,82 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="users_controller_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users_controller_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/controllers/users_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="methods.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/webrat-0.7.3/lib/webrat/core/methods.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="read.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-4.0.1/lib/active_record/attribute_methods/read.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="2704" selection-end="2704" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="have_selector.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/webrat-0.7.3/lib/webrat/core/matchers/have_selector.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="21" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="have_xpath.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/webrat-0.7.3/lib/webrat/core/matchers/have_xpath.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="544" selection-end="544" vertical-scroll-proportion="0.33241758">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="syntax.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-expectations-2.14.4/lib/rspec/expectations/syntax.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="0" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="configuration.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/webrat-0.7.3/lib/webrat/core/configuration.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_case.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/test_case.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="609" column="22" selection-start="21953" selection-end="21953" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="response.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_dispatch/http/response.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="43" selection-start="3248" selection-end="3248" vertical-scroll-proportion="0.0">
+            <state line="42" column="62" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.53296703">
               <folding />
             </state>
           </provider>
@@ -638,7 +561,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="748" extended-state="7" />
+    <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -722,11 +645,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/controllers/users_controller_spec.rb</url>
-          <line>26</line>
+          <line>25</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/controllers/users_controller_spec.rb</url>
-          <line>31</line>
+          <line>30</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
@@ -847,16 +770,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/users_controller_spec.rb">
+    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/webrat-0.7.3/lib/webrat/core/matchers/have_xpath.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+        <state line="26" column="0" selection-start="544" selection-end="544" vertical-scroll-proportion="0.33241758">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/webrat-0.7.3/lib/webrat/core/matchers/have_xpath.rb">
+    <entry file="file://$PROJECT_DIR$/spec/controllers/users_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="544" selection-end="544" vertical-scroll-proportion="0.33241758">
+        <state line="42" column="62" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.53296703">
           <folding />
         </state>
       </provider>
