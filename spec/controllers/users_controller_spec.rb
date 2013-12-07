@@ -9,7 +9,7 @@ describe UsersController do
 
   describe "GET 'show'" do
     before(:each) do
-      @user = Factory(:user) 
+      @user = Factory(:user)
     end
 
     it "should be successful" do
@@ -39,8 +39,8 @@ describe UsersController do
     it "should have the right url" do
       get :show, :id => @user
       response.should have_selector("td>a",
-                                    :content => user_path(@user),
-                                    :href => user_path(@user))
+      :content => user_path(@user),
+      :href => user_path(@user))
     end
 
   end
@@ -49,7 +49,7 @@ describe UsersController do
     describe "failure" do
       before(:each) do
         @attr = {:name => "", :email => "", :password => "",
-                 :password_confirmation => ""
+          :password_confirmation => ""
         }
       end
 
@@ -95,6 +95,62 @@ describe UsersController do
     it "should sign user in" do
       post :create, :user => @attr
       controller.should be_signed_in
+    end
+  end
+
+  describe "GET 'edit" do
+    before(:each) do
+      @user = Factory(:user)
+      test_sign_in(@user)
+    end
+    it "should be successful" do
+      get :edit, :id => @user
+      response.should be_success
+    end
+
+    it "should have right title" do
+      get :edit, :id => @user
+      response.should have_selector('title', :content => "Edit User")
+    end
+
+    it "should have a link to change the gravatar" do
+      get :edit, :id => @user
+      response.should have_selector('a', :href => "http://gravatar.com/emails" , :content => "change")
+    end
+    describe "PUT 'updates" do
+      before(:each) do
+        @attr = {:name => "", :email => "", :password => "",
+        :password_confirmation => ""}
+
+      end
+      describe "failure" do
+        it "should render the edit page" do
+          put :update , {:id  => @user , :user =>  @attr}
+          response.should render_template("edit")
+        end
+      end
+
+      describe "success" do
+        before(:each) do
+          @attr = { :name => "New Name", :email => "user@example.com",
+            :password => "foobar" , :password_confirmation => "foobar"
+          }
+        end
+
+        it "should change the users attributes" do
+          put :update, {:id => @user, :user => @attr}
+          user = assigns(:user)
+          @user.reload
+          @user.name.should == user.name
+          @user.email.should == user.email
+          @user.encrypted_password == user.encrypted_password
+        end
+
+        it "should have a flash message" do
+          put :update , {:id => @user , :user => @attr}
+          flash[:success]  .should =~ /updated/i
+        end
+      end
     end
   end
 end

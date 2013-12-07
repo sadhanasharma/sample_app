@@ -21,10 +21,25 @@ class UsersController < ApplicationController
 			render 'new'
 		end
 	end
-	private
+
+	def edit
+		@title ="Edit User"
+		@user = User.find_by_id(params[:id])
+	end
+
+	def update
+		@user = User.find_by_id(params[:id])
+		if @user.update_attributes(user_params)
+			redirect_to @user , :flash => { :success =>  "Profile updated."}
+		else
+			@title = "Edit User"
+			render 'edit'
+		end
+	end
 
 	def user_params
 		params.require(:user).permit(:name, :email, :password, :salt, :encrypted_password)
 	end
+
 end
 
