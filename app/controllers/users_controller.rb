@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
 	def show
 		@user = User.find(params[:id])
-		@title = @user.name	
+		@title = @user.name
 	end
 
 	def new
@@ -13,6 +13,7 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(user_params)
 		if @user.save
+			sign_in @user
 			redirect_to @user,  :flash => { :success =>  "Welcome to the sample app !"}
 
 		else
@@ -24,6 +25,6 @@ class UsersController < ApplicationController
 
 	def user_params
 		params.require(:user).permit(:name, :email, :password, :salt, :encrypted_password)
-	end 
+	end
 end
 
