@@ -9,7 +9,7 @@ describe UsersController do
 
   describe "GET 'show'" do
     before(:each) do
-      @user = Factory(:user)
+      @user = Factory(:user) 
     end
 
     it "should be successful" do
@@ -49,7 +49,7 @@ describe UsersController do
     describe "failure" do
       before(:each) do
         @attr = {:name => "", :email => "", :password => "",
-                :password_confirmation => ""
+                 :password_confirmation => ""
         }
       end
 
@@ -78,20 +78,20 @@ describe UsersController do
     end
 
     it "should creata a user" do
-    	  lambda do
-          post :create, :user => @attr
-        end.should  change(User, :count).by(1)
+      lambda do
+        post :create, :user => @attr
+      end.should change(User, :count).by(1)
     end
 
-	it "should redirect to the user show page" do
-		post :create, :user => @attr	  
-		response.should redirect_to(user_path(assigns(:user)))
-	end
+    it "should redirect to the user show page" do
+      post :create, :user => @attr
+      response.should redirect_to(user_path(assigns(:user)))
+    end
 
-	it "should have a welcome message" do
-	  post :create, :user => @attr
-	  flash[:success].should =~ /welcome to the sample app/i
-	end
+    it "should have a welcome message" do
+      post :create, :user => @attr
+      flash[:success].should =~ /welcome to the sample app/i
+    end
 
   end
 end

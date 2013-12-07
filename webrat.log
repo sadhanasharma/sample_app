@@ -766,3 +766,13 @@ D, [2013-12-06T20:29:15.567238 #5096] DEBUG -- : REQUESTING PAGE: GET /about wit
 D, [2013-12-06T20:29:15.601240 #5096] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
 D, [2013-12-06T20:29:15.629242 #5096] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
 D, [2013-12-06T20:29:15.719247 #5096] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2013-12-07T17:27:34.282960 #7140] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2013-12-07T17:27:34.308962 #7140] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2013-12-07T17:27:34.333963 #7140] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2013-12-07T17:27:34.391966 #7140] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2013-12-07T17:27:34.417968 #7140] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2013-12-07T17:27:35.195012 #7140] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2013-12-07T17:27:35.229014 #7140] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2013-12-07T17:27:35.280017 #7140] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2013-12-07T17:27:35.347021 #7140] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2013-12-07T17:27:35.363022 #7140] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/8616 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}

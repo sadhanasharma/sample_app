@@ -2,20 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/custom.css" afterPath="$PROJECT_DIR$/public/stylesheets/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" afterPath="$PROJECT_DIR$/app/views/users/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/sessions_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/sessions_controller_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webrat.log" afterPath="$PROJECT_DIR$/webrat.log" />
     </list>
     <ignored path="sample_app.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" time="1386313090574" ignored="false" />
-    <file path="/a.rxml" changelist="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" time="1386253897175" ignored="false" />
+    <file path="/Dummy.txt" changelist="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" time="1386342683513" ignored="false" />
+    <file path="/a.rxml" changelist="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" time="1386342843719" ignored="false" />
     <file path="/user_spec.rb" changelist="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" time="1386254512366" ignored="false" />
     <file path="/user.rb" changelist="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" time="1386254757733" ignored="false" />
     <file path="/users_spec.rb" changelist="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" time="1386314821206" ignored="false" />
+    <file path="/sessions_controller.rb" changelist="b045b6fe-8bb1-4b3d-b61c-bea3e13d93da" time="1386415554748" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,16 +40,79 @@
       <file leaf-file-name="users_controller_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/controllers/users_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="12" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.0">
+            <state line="83" column="29" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_spec.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/requests/users_spec.rb">
+      <file leaf-file-name="sessions_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="14" selection-start="165" selection-end="165" vertical-scroll-proportion="0.20588236">
+            <state line="9" column="9" selection-start="172" selection-end="172" vertical-scroll-proportion="0.44476745">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sessions_controller_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/controllers/sessions_controller_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="75" selection-start="1428" selection-end="1428" vertical-scroll-proportion="-108.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="methods.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/webrat-0.7.3/lib/webrat/core/methods.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="25" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller_example_group.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-rails-2.14.0/lib/rspec/rails/example/controller_example_group.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="136" column="0" selection-start="4492" selection-end="4492" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="redirect_to.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-rails-2.14.0/lib/rspec/rails/matchers/redirect_to.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="0" selection-start="799" selection-end="799" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="syntax.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-expectations-2.14.4/lib/rspec/expectations/syntax.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="0" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core/example.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="118" column="69" selection-start="4267" selection-end="4267" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="126" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,8 +138,10 @@
       <list>
         <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" />
         <option value="$PROJECT_DIR$/spec/requests/users_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/sessions_controller_spec.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
       </list>
     </option>
   </component>
@@ -86,8 +153,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="683" />
-    <option name="height" value="740" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1374" />
+    <option name="height" value="748" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -132,6 +201,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -206,6 +276,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -230,50 +318,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="preferences.sourceCode.Ruby" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="appearance" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="RSpec.users_controller_spec">
-    <configuration default="false" name="All specs in: spec" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="sample_app" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$PROJECT_DIR$/spec" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Ruby.sessions_controller">
     <configuration default="false" name="UsersController GET 'show' should have the right title" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="sample_app" />
@@ -332,6 +388,73 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SessionsController GET 'new' POST 'create' success should redirect to the user show page" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="sample_app" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/controllers/sessions_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="SessionsController GET 'new' POST 'create' success should redirect to the user show page" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="example" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="D:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="D:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core/example.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="sessions_controller" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="sample_app" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/app/controllers" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <method />
@@ -528,21 +651,23 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
-    <list size="7">
+    <list size="9">
       <item index="0" class="java.lang.String" itemvalue="Rake.test" />
       <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
       <item index="2" class="java.lang.String" itemvalue="Rails.Production: sample_app" />
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: sample_app" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.All specs in: spec" />
-      <item index="5" class="java.lang.String" itemvalue="RSpec.UsersController GET 'show' should have the right title" />
-      <item index="6" class="java.lang.String" itemvalue="RSpec.users_controller_spec" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.UsersController GET 'show' should have the right title" />
+      <item index="5" class="java.lang.String" itemvalue="RSpec.users_controller_spec" />
+      <item index="6" class="java.lang.String" itemvalue="RSpec.SessionsController GET 'new' POST 'create' success should redirect to the user show page" />
+      <item index="7" class="java.lang.String" itemvalue="Ruby.example" />
+      <item index="8" class="java.lang.String" itemvalue="Ruby.sessions_controller" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.users_controller_spec" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.users_controller_spec" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.users_controller_spec" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.UsersController GET 'show' should have the right title" />
+        <item index="0" class="java.lang.String" itemvalue="Ruby.sessions_controller" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.example" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.SessionsController GET 'new' POST 'create' success should redirect to the user show page" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.users_controller_spec" />
         <item index="4" class="java.lang.String" itemvalue="RSpec.users_controller_spec" />
       </list>
     </recent_temporary>
@@ -574,15 +699,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="683" height="740" extended-state="0" />
+    <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3052464" sideWeight="0.624" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37538463" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15075758" sideWeight="0.6256" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3744" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -680,49 +805,21 @@
           <line>26</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/spec/controllers/sessions_controller_spec.rb</url>
+          <line>51</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/sessions_controller.rb</url>
+          <line>7</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-4.0.1/lib/active_record/connection_adapters/abstract/transaction.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="2252" selection-end="2252" vertical-scroll-proportion="0.14190318" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-4.0.1/lib/active_record/fixtures.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="884" column="0" selection-start="28798" selection-end="28798" vertical-scroll-proportion="0.13822526" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core/example.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="0" selection-start="4419" selection-end="4419" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core/configuration.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="941" column="0" selection-start="31971" selection-end="31971" vertical-scroll-proportion="0.13822526">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core/hooks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="0" selection-start="2702" selection-end="2702" vertical-scroll-proportion="0.14190318">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core/example_group.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="379" column="25" selection-start="14050" selection-end="14050" vertical-scroll-proportion="0.34056762">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-4.0.1/lib/action_controller/test_case.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="609" column="22" selection-start="21953" selection-end="21953" vertical-scroll-proportion="0.0">
@@ -737,16 +834,7 @@
     </entry>
     <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/webrat-0.7.3/lib/webrat/core/configuration.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/webrat-0.7.3/lib/webrat/core/methods.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="0" selection-start="360" selection-end="360" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-4.0.1/lib/active_record/attribute_methods/read.rb">
@@ -756,7 +844,33 @@
     </entry>
     <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/webrat-0.7.3/lib/webrat/core/matchers/have_selector.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="21" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0">
+        <state line="53" column="21" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/webrat-0.7.3/lib/webrat/core/matchers/have_xpath.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="544" selection-end="544" vertical-scroll-proportion="0.33241758">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/requests/users_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="42" selection-start="908" selection-end="908" vertical-scroll-proportion="0.70705247">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-rails-2.14.0/lib/rspec/rails/example/controller_example_group.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="0" selection-start="4492" selection-end="4492" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-rails-2.14.0/lib/rspec/rails/matchers/redirect_to.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="799" selection-end="799" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -768,23 +882,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/webrat-0.7.3/lib/webrat/core/matchers/have_xpath.rb">
+    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core/example.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="544" selection-end="544" vertical-scroll-proportion="0.33241758">
+        <state line="118" column="69" selection-start="4267" selection-end="4267" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="126" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/users_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="12" selection-start="1595" selection-end="1595" vertical-scroll-proportion="0.0">
+        <state line="83" column="29" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/requests/users_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/controllers/sessions_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="14" selection-start="165" selection-end="165" vertical-scroll-proportion="0.20588236">
+        <state line="54" column="75" selection-start="1428" selection-end="1428" vertical-scroll-proportion="-108.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Ruby193/lib/ruby/gems/1.9.1/gems/webrat-0.7.3/lib/webrat/core/methods.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="25" selection-start="739" selection-end="739" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="9" selection-start="172" selection-end="172" vertical-scroll-proportion="0.44476745">
           <folding />
         </state>
       </provider>
