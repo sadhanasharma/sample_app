@@ -24,7 +24,7 @@ class UsersController < ApplicationController
 		end
 	end
 
-	def edit
+	def edit 
 		@title ="Edit User"
 		@user = User.find_by_id(params[:id])
 	end

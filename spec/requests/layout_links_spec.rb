@@ -104,9 +104,8 @@ describe "LayoutLinks" do
 				end
 
 				describe "after signing in" do
-
 					it "should render the desired protected page" do
-						response.should have_selector("title", :content => 'Edit user')
+						response.should have_selector("title", :content => 'Edit User')
 					end
 				end
 			end
