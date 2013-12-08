@@ -3,7 +3,7 @@ module SessionsHelper
 	def sign_in(user)
 		cookies.permanent.signed[:remember_token] = [user.id, user.salt]
 		current_user = user
-		puts "@current_user : #{current_user}" 		
+		puts "@current_user : #{current_user}"
 	end
 
 	def current_user=(user)
@@ -36,5 +36,10 @@ module SessionsHelper
 	def sign_out
 		@current_user = nil
 		cookies.delete(:remember_token)
+	end
+
+	def deny_access
+		flash[:notice] = "Please sign in to access this page."
+		redirect_to signin_path
 	end
 end

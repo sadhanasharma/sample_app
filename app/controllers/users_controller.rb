@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
-
+	before_filter :authenticate, :only => [:edit , :update]
+	before_filter :correct_user, :only => [:edit, :update]
+	
 	def show
 		@user = User.find(params[:id])
 		@title = @user.name
@@ -41,5 +43,14 @@ class UsersController < ApplicationController
 		params.require(:user).permit(:name, :email, :password, :salt, :encrypted_password)
 	end
 
-end
+	def authenticate
+		if !signed_in?
+		deny_access()
+		end
+	end
 
+	def correct_user
+		@user = User.find_by_id(params[:id])
+		current_user == @user ? @user : redirect_to(root_path)
+	end
+end

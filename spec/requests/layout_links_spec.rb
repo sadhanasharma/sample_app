@@ -86,4 +86,30 @@ describe "LayoutLinks" do
 			response.should have_selector("a", :href => edit_user_path(@user) , :content => "Settings")
 		end
 	end
+
+	describe "authorization" do
+
+		describe "for non-signed-in users" do
+
+			before(:each) do
+				@user = Factory(:user)
+			end
+
+			describe "when attempting to visit a protected page" do
+				before do
+					visit edit_user_path(@user)
+					fill_in "Email",    with:  @user.email
+					fill_in "Password", with:  @user.password
+					click_button "Submit"
+				end
+
+				describe "after signing in" do
+
+					it "should render the desired protected page" do
+						response.should have_selector("title", :content => 'Edit user')
+					end
+				end
+			end
+		end
+	end
 end
