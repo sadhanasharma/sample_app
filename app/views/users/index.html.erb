@@ -1,0 +1,14 @@
+<h1>All users</h1>
+<ul class="users">
+<% @users.each do |temp| %>
+	<li>
+	<%=  gravatar_image_tag(temp.email.downcase,
+	:alt => temp.name ,
+	:class => "gravatar",
+	:gravatar => { :size =>  30}
+	) %>
+	<%= link_to  temp.name, temp %>
+	</li>
+
+	<% end %>
+	</ul>

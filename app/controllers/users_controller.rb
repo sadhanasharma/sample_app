@@ -1,7 +1,12 @@
 class UsersController < ApplicationController
 	before_filter :authenticate, :only => [:edit , :update]
 	before_filter :correct_user, :only => [:edit, :update]
-	
+
+	def index		
+		@users = User.all
+		@title = "All users"
+	end
+
 	def show
 		@user = User.find(params[:id])
 		@title = @user.name
@@ -24,7 +29,7 @@ class UsersController < ApplicationController
 		end
 	end
 
-	def edit 
+	def edit
 		@title ="Edit User"
 		@user = User.find_by_id(params[:id])
 	end
@@ -45,7 +50,7 @@ class UsersController < ApplicationController
 
 	def authenticate
 		if !signed_in?
-		deny_access()
+			deny_access()
 		end
 	end
 
