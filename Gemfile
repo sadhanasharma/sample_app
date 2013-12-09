@@ -40,6 +40,8 @@ group :development, :test do
 	gem 'spork'
 	gem 'annotate', ">=2.6.0"
 	gem "factory_girl_rails", "1.0"
+	gem "faker" , '0.3.1'
+	gem "will_paginate"
 end
 
 
