@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-	before_filter :authenticate, :only => [:edit , :update, :index ]
+	before_filter :authenticate, :only => [:edit , :update, :index , :destroy]
 	before_filter :correct_user, :only => [:edit, :update]
-
+	before_filter :admin_user, :only => :destroy
 	def index		
 		@title = "All users"
 		@users = User.paginate(:page => params[:page] )		
@@ -45,7 +45,7 @@ class UsersController < ApplicationController
 	end
 
 	def user_params
-		params.require(:user).permit(:name, :email, :password, :salt, :encrypted_password)
+		params.require(:user).permit(:name, :email, :password, :salt, :encrypted_password, :admin)
 	end
 
 	def authenticate
@@ -57,5 +57,15 @@ class UsersController < ApplicationController
 	def correct_user
 		@user = User.find_by_id(params[:id])
 		current_user == @user ? @user : redirect_to(root_path)
+	end
+
+	def destroy
+		User.find(params[:id]).destroy
+		redirect_to users_path , :flash => { :success => "User destroyed !"}
+	end
+
+	def admin_user
+		user = User.find(params[:id])
+		redirect_to root_path if (!current_user.admin?   || current_user == user)
 	end
 end

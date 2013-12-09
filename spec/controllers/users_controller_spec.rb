@@ -46,6 +46,20 @@ describe UsersController do
         response.should have_selector("a", :href => "/users?page=2", :content => "2")
         response.should have_selector("a", :href => "/users?page=2", :content => "Next")
       end
+
+      it "should have delete links for admins" do
+        @user.toggle!(:admin)
+        another_user = User.all.second
+        get :index
+        response.should have_selector('a', :href => user_path(another_user), :content => "Delete")
+      end
+
+      it "should have not delete links for non admins" do
+        another_user = User.all.second
+        get :index
+        response.should_not have_selector('a', :href => user_path(another_user), :content => "Delete")
+      end
+
     end
   end
 
@@ -235,6 +249,54 @@ describe UsersController do
       it "should require matching users to  'update'" do
         put :update, :id => @user, :user => {}
         response.should redirect_to(root_path)
+      end
+    end
+  end
+
+  describe "DELETE 'destroy" do
+
+    before(:each) do
+      @user = Factory(:user)
+    end
+
+    describe "as non-signed in user" do
+      it "should deny the access" do
+        delete :destroy , :id  => @user
+        response.should redirect_to(signin_path)
+      end
+    end
+
+    describe "as non admin user" do
+      it "should protect  the action" do
+        test_sign_in(@user)
+        delete :destroy , :id  => @user
+        response.should redirect_to(root_path)
+      end
+    end
+
+    describe "as an admin user" do
+      before(:each) do
+        @admin = Factory(:user , :email => "admin1@test.com", :admin => true )
+        test_sign_in(@admin)
+      end
+
+      it "should destroy the user" do
+        lambda do
+          delete :destroy, :id => @user
+        end.should change(User, :count).by(-1)
+      end
+
+      it "should redirect to the users page" do
+        puts "Admin  #{@admin.inspect}"
+        delete :destroy , :id  => @user
+        response.should redirect_to(users_path)
+      end
+
+      it "should not self destruct" do
+        lambda do
+          puts "Admin  #{@admin.inspect}"
+          delete :destroy , :id  => @admin
+        end.should  change(User, :count).by(0)
       end
     end
   end
