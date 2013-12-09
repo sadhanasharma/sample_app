@@ -13,6 +13,8 @@
 #
 
 class User < ActiveRecord::Base
+	has_many :microposts, :dependent => :destroy
+
 	attr_accessor :password
 
 	email_regex = /\A[\w._-]+@([\da-z]*\.)+[\da-z]+\z/i
@@ -38,7 +40,7 @@ class User < ActiveRecord::Base
 
 	def User.authenticate(email, submitted_password)
 		user =  User.find_by_email(email)
-		puts "User for the email #{email} : #{user}"
+		# puts "User for the email #{email} : #{user}"
 		(user && user.has_password?(submitted_password)) ? user : nil
 		# return nil if user.nil?
 		# return user if user.has_password?(submitted_password)
@@ -68,4 +70,5 @@ class User < ActiveRecord::Base
 	def secure_hash(string)
 		Digest::SHA2.hexdigest(string)
 	end
+
 end

@@ -287,14 +287,14 @@ describe UsersController do
       end
 
       it "should redirect to the users page" do
-        puts "Admin  #{@admin.inspect}"
+        # puts "Admin  #{@admin.inspect}"
         delete :destroy , :id  => @user
         response.should redirect_to(users_path)
       end
 
       it "should not self destruct" do
         lambda do
-          puts "Admin  #{@admin.inspect}"
+          # puts "Admin  #{@admin.inspect}"
           delete :destroy , :id  => @admin
         end.should  change(User, :count).by(0)
       end
