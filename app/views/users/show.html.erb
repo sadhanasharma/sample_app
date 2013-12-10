@@ -1,7 +1,7 @@
 <table class="profile" summary = "Profile Information">
 	<tr>
 		<td><h1>
-			<%= gravatar_for @user.email  %>
+			<%= gravatar_for @user  %>
 			<%= @user.name %>
 		</h1> 
 		<% if @microposts.any? %>
