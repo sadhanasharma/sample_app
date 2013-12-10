@@ -225,31 +225,31 @@ table.microposts tbody tr{
 	height:  70px;
 }
 
-table.micrposts tbody tr td.gravatar 
+ td.gravatar 
 {
 	border-top: 1px solid #ccc;
 	vertical-align: top;
 	width: 50px;
 }
 
-table.micrposts tbody tr td.micropost
+ td.micropost
 {
 	border-top: 1px solid #ccc;
 	vertical-align: top;
 	padding-top: 10px;
 }
-table.micrposts tbody tr td.micropost span.content
+ td.micropost span.content
 {
 	display: block;
 	font-size: 85%;
 	color: #666;
 } 
 
-table.micrposts tbody tr td.micropost span.timestamp
+ div.timestamp
 {
 	display: block;
 	font-size: 85%;
-	color: #666;
+	color: #989898 ;
 } 
 
 div.user_info img{
@@ -277,3 +277,23 @@ form.new_micropost textarea
 	margin-bottom: 0px;
 }
 
+.stats {
+  overflow: auto;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $grayLighter;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}

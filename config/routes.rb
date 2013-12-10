@@ -2,7 +2,14 @@ SampleApp::Application.routes.draw do
   
   root "pages#home"
 
-  resources :users
+  resources :users do
+    member do
+       get :following, :following_users
+       get :followed, :followed_by_users
+    end
+  end
+
+
   resources :sessions, :only  => [ :new, :create, :destroy]
   resources :microposts, :only => [:create, :destroy]  
 

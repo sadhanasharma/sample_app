@@ -76,16 +76,18 @@ describe MicropostsController do
 			end
 
 			describe "for an authorized user" do
+
 				before(:each) do
 					@user = test_sign_in(Factory(:user))
 					@micropost = Factory(:micropost , :user => @user)
 				end
+
 				it "should destroy the micropost" do
 					lambda do
 						delete :destroy, :id => @micropost
 						flash[:success].should =~ /Micropost deleted !/i
 						response.should redirect_to(root_path)
-					end.should change(Micropost, :count).by(1)
+					end.should change(Micropost, :count).by(-1)
 				end
 
 			end

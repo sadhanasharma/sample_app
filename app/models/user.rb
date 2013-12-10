@@ -14,6 +14,10 @@
 
 class User < ActiveRecord::Base
 	has_many :microposts, :dependent => :destroy
+	has_many :relationships, foreign_key: "follower_id", dependent: :destroy
+	has_many :following_users, :through => :relationships, :source =>  :followed
+	has_many :reverse_relationships, foreign_key: "followed_id", dependent: :destroy, :class_name =>  "Relationship"
+	has_many :followed_by_users, :through => :reverse_relationships, :source =>  :follower
 
 	attr_accessor :password
 
@@ -71,5 +75,17 @@ class User < ActiveRecord::Base
 
 	def feed
 		Micropost.where("user_id = ?", id)
+	end
+
+	def follow!(other_user)
+		relationships.create!(followed_id: other_user.id)
+	end
+
+	def unfollow!(followed)
+		relationships.find_by_followed_id(followed.id).destroy if following?(followed)
+	end
+
+	def following?(followed)
+		self.relationships.find_by_followed_id(followed.id)
 	end
 end
