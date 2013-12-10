@@ -167,7 +167,7 @@ div.field div.action
 }
 
 .field_with_errors label{
-	color: : #fff;
+	color: #fff;
 }
 
 #error_explanation{
@@ -185,13 +185,13 @@ div.field div.action
 	padding: 5px 5px 5px 15px;
 	font-size: 12px;
 	margin: -7px;
-	background-color: #c00
+	background-color: #c00;
 	color: #fff;
 }
 
 #error_explanation p{
 	color: #333;
-	margin-bottom: 0;
+	margin-bottom: 0px;
 	padding: 5px;
 }
 
@@ -209,3 +209,71 @@ ul.users
 ul.users li{
 	list-style: none;
 }
+
+
+/*Microposts style*/
+h1.micropost
+{
+	margin-bottom: .3em;
+}
+
+table.microposts{
+	margin-top: 1em;
+}
+
+table.microposts tbody tr{
+	height:  70px;
+}
+
+table.micrposts tbody tr td.gravatar 
+{
+	border-top: 1px solid #ccc;
+	vertical-align: top;
+	width: 50px;
+}
+
+table.micrposts tbody tr td.micropost
+{
+	border-top: 1px solid #ccc;
+	vertical-align: top;
+	padding-top: 10px;
+}
+table.micrposts tbody tr td.micropost span.content
+{
+	display: block;
+	font-size: 85%;
+	color: #666;
+} 
+
+table.micrposts tbody tr td.micropost span.timestamp
+{
+	display: block;
+	font-size: 85%;
+	color: #666;
+} 
+
+div.user_info img{
+	padding-right: .1em;	
+}
+
+div.user_info span.user_name
+{
+	position: absolute;
+}
+
+div.user_info span.micrposts
+{
+	font-size: 80%;
+}
+
+form.new_micropost
+{
+	margin-bottom: 2em;
+}
+
+form.new_micropost textarea
+{
+	height: 4em;
+	margin-bottom: 0px;
+}
+
