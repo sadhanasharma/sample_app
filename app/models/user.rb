@@ -52,8 +52,6 @@ class User < ActiveRecord::Base
 		(user && user.salt == cookie_salt) ? user : nil
 	end
 
-	private
-
 	def encrypt_password
 		self.salt =  make_salt if new_record?
 		self.encrypted_password = encrypt(self.password)
@@ -71,4 +69,7 @@ class User < ActiveRecord::Base
 		Digest::SHA2.hexdigest(string)
 	end
 
+	def feed
+		Micropost.where("user_id = ?", id)
+	end
 end

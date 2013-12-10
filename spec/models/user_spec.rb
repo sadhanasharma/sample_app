@@ -164,53 +164,69 @@ describe User do
 			end
 
 			it "should return the user on email/password match" do
-			  User.authenticate(@attr[:email], @attr[:password]).should == @user
+				User.authenticate(@attr[:email], @attr[:password]).should == @user
 			end
 		end
 	end
 
 	describe "admin attribute" do
 		before(:each) do
-		  @user = User.create!(@attr)
+			@user = User.create!(@attr)
 		end
 
-	  it "should respond to admin" do
-	    @user.should respond_to(:admin)
-	  end
+		it "should respond to admin" do
+			@user.should respond_to(:admin)
+		end
 
-	  it "should not be an admin by default" do
-	    @user.should_not be_admin
-	  end
+		it "should not be an admin by default" do
+			@user.should_not be_admin
+		end
 
-	  it "should be convertible to the admin" do
-	    @user.toggle!(:admin)
-	    @user.should be_admin
-	  end
+		it "should be convertible to the admin" do
+			@user.toggle!(:admin)
+			@user.should be_admin
+		end
 	end
 
 	describe "micropost associations" do
 
 		before(:each) do
-		  @user = User.create(@attr)
-		  @mp1 = Factory(:micropost, :user => @user, :created_at => 1.day.ago)
-		  @mp2 = Factory(:micropost, :user => @user, :created_at => 1.hour.ago)
+			@user = User.create(@attr)
+			@mp1 = Factory(:micropost, :user => @user, :created_at => 1.day.ago)
+			@mp2 = Factory(:micropost, :user => @user, :created_at => 1.hour.ago)
 		end
 
-	  it "should have a microposts attribute" do
-	    @user.should respond_to(:microposts)
-	  end
+		it "should have a microposts attribute" do
+			@user.should respond_to(:microposts)
+		end
 
-	  it "should have the right microposts in right order" do
-	    @user.microposts.should == [ @mp2, @mp1]
-	  end
+		it "should have the right microposts in right order" do
+			@user.microposts.should == [ @mp2, @mp1]
+		end
 
-	  it "should destroy microposts for the user" do
-	    @user.destroy
-	    [@mp1, @mp2].each do |micropost|
-	    	lambda do
-	    	Micropost.find(micropost.id).should be_nil
-	    end.should raise_error(ActiveRecord::RecordNotFound)
-	    end
-	  end
+		it "should destroy microposts for the user" do
+			@user.destroy
+			[@mp1, @mp2].each do |micropost|
+				lambda do
+					Micropost.find(micropost.id).should be_nil
+				end.should raise_error(ActiveRecord::RecordNotFound)
+			end
+		end
+
+		describe "status Feed " do
+			it "should have a feed" do
+				@user.should respond_to(:feed)
+			end
+
+			it "should include users microposts" do
+				@user.feed.should include(@mp1)
+				@user.feed.should include(@mp2)
+			end
+
+			it "should not include a different users microposts" do
+			mp3 = Factory(:micropost, :user => Factory(:user , :email => Factory.next(:email)))  
+			@user.feed.should_not  include(mp3)
+			end
+		end
 	end
 end
